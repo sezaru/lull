@@ -1,0 +1,15 @@
+{
+  "mcpServers": {
+    "flutter": {
+      "command": "dart",
+      "args": ["mcp-server"],
+      "env": {
+        "DART_VM_OPTIONS": "--old_gen_heap_size=512"
+      }
+    },
+    "playwright": {
+      "command": "playwright-mcp",
+      "args": ["--browser", "chromium"]
+    }
+  }
+}

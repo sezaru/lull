@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:width="108dp"
+    android:height="108dp"
+    android:viewportWidth="108"
+    android:viewportHeight="108">
+    <path
+        android:pathData="M30 56.8C34.73 44.01 34.87 44.01 39.6 56.8C42.67 65.13 46.13 65.13 49.2 56.8C50.98 52 57.02 52 58.8 56.8C59.52 58.72 65.04 56.8 68.4 56.8L78 56.8"
+        android:strokeColor="@color/ic_launcher_foreground"
+        android:strokeWidth="5"
+        android:strokeLineCap="round"
+        android:strokeLineJoin="round" />
+</vector>
