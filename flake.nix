@@ -10,7 +10,7 @@
 
     devkit.url = "github:sezaru/nix-devkit";
 
-    dev-ai-plugins.url = "github:Hexhound/dev-ai-plugins";
+    dev-ai-plugins.follows = "devkit/dev-ai-plugins";
   };
 
   nixConfig = {

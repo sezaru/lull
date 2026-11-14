@@ -99,14 +99,15 @@
     },
     "dev-ai-plugins": {
       "inputs": {
-        "nixpkgs": "nixpkgs"
+        "nixpkgs": "nixpkgs",
+        "reel": "reel"
       },
       "locked": {
-        "lastModified": 1788303996,
-        "narHash": "sha256-tUhPj5m+SGjmXq7oeT6bcghn1krm9lwcSygaQ1LQZrA=",
+        "lastModified": 1793646039,
+        "narHash": "sha256-y8IzNehZ0XL1tfUXDDF02vtv9bKy8wGKE8r8LNpPzd4=",
         "owner": "Hexhound",
         "repo": "dev-ai-plugins",
-        "rev": "6a5b0b9ddce0e86162bffcf3077448c7ab1662e7",
+        "rev": "2b9245e1fc18f1d2c48a47f30f76887704d0ef8d",
         "type": "github"
       },
       "original": {
@@ -125,7 +126,7 @@
         "git-hooks": "git-hooks",
         "nix": "nix",
         "nixd": "nixd",
-        "nixpkgs": "nixpkgs_2",
+        "nixpkgs": "nixpkgs_3",
         "rust-overlay": "rust-overlay"
       },
       "locked": {
@@ -146,10 +147,11 @@
     "devkit": {
       "inputs": {
         "blender-mcp": "blender-mcp",
+        "dev-ai-plugins": "dev-ai-plugins",
         "devenv": "devenv",
         "expert": "expert",
         "flake-utils": "flake-utils",
-        "nixpkgs": "nixpkgs_4",
+        "nixpkgs": "nixpkgs_5",
         "nixpkgs-codex": "nixpkgs-codex",
         "nixpkgs-flutter": "nixpkgs-flutter",
         "nixpkgs-secretspec": "nixpkgs-secretspec",
@@ -157,11 +159,11 @@
         "open-design": "open-design"
       },
       "locked": {
-        "lastModified": 1794675441,
-        "narHash": "sha256-BbWMqF/evuBe/Piyd1hBQ/DkYkuRpU797gtwj/7zuzA=",
+        "lastModified": 1794678431,
+        "narHash": "sha256-0vTtGmXppldOOWdJNzX5OvIySrfDQddGQaBaY/YxDZ4=",
         "owner": "sezaru",
         "repo": "nix-devkit",
-        "rev": "29166b44a1ea27f609fa082243e52ad3bd84c9d3",
+        "rev": "f36473251dfcdc7ab8d2c4dbbb498cd1bbce2ddf",
         "type": "github"
       },
       "original": {
@@ -174,7 +176,7 @@
       "inputs": {
         "beam-flakes": "beam-flakes",
         "flake-parts": "flake-parts_2",
-        "nixpkgs": "nixpkgs_3"
+        "nixpkgs": "nixpkgs_4"
       },
       "locked": {
         "lastModified": 1794498549,
@@ -547,6 +549,22 @@
       }
     },
     "nixpkgs_2": {
+      "locked": {
+        "lastModified": 1792502884,
+        "narHash": "sha256-IoNisKcGbUjdd45qCqywGMCYmZ5EnkxezvLII0FWwNA=",
+        "owner": "NixOS",
+        "repo": "nixpkgs",
+        "rev": "02c087f3fe673c9e317f206a627cb6b910336dbe",
+        "type": "github"
+      },
+      "original": {
+        "owner": "NixOS",
+        "ref": "nixos-unstable",
+        "repo": "nixpkgs",
+        "type": "github"
+      }
+    },
+    "nixpkgs_3": {
       "inputs": {
         "nixpkgs-src": "nixpkgs-src"
       },
@@ -565,7 +583,7 @@
         "type": "github"
       }
     },
-    "nixpkgs_3": {
+    "nixpkgs_4": {
       "locked": {
         "lastModified": 1789149629,
         "narHash": "sha256-H6GwaZzZf+4npqv0tph94w9tZddSjFjmQrVsW0z78uk=",
@@ -581,7 +599,7 @@
         "type": "github"
       }
     },
-    "nixpkgs_4": {
+    "nixpkgs_5": {
       "inputs": {
         "nixpkgs-src": "nixpkgs-src_2"
       },
@@ -600,7 +618,7 @@
         "type": "github"
       }
     },
-    "nixpkgs_5": {
+    "nixpkgs_6": {
       "inputs": {
         "nixpkgs-src": "nixpkgs-src_3"
       },
@@ -635,16 +653,37 @@
         "type": "github"
       }
     },
+    "reel": {
+      "inputs": {
+        "nixpkgs": "nixpkgs_2"
+      },
+      "locked": {
+        "lastModified": 1792696522,
+        "narHash": "sha256-ujAutZBgqu4qFWXRiD4lKuuAmbF7E0itd3VlUzLHf0Q=",
+        "owner": "sezaru",
+        "repo": "reel",
+        "rev": "3a69108df46fb28b640de52b41932d13692a328f",
+        "type": "github"
+      },
+      "original": {
+        "owner": "sezaru",
+        "repo": "reel",
+        "type": "github"
+      }
+    },
     "root": {
       "inputs": {
-        "dev-ai-plugins": "dev-ai-plugins",
+        "dev-ai-plugins": [
+          "devkit",
+          "dev-ai-plugins"
+        ],
         "devenv": [
           "devkit",
           "devenv"
         ],
         "devkit": "devkit",
         "flake-utils": "flake-utils_2",
-        "nixpkgs": "nixpkgs_5"
+        "nixpkgs": "nixpkgs_6"
       }
     },
     "rust-overlay": {
