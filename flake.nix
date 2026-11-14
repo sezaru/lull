@@ -2,7 +2,7 @@
   description = "Lull: ad-free controller for the Pulsetto vagus nerve stimulator";
 
   inputs = {
-    devenv.url = "github:cachix/devenv";
+    devenv.follows = "devkit/devenv";
 
     nixpkgs.url = "github:cachix/devenv-nixpkgs/rolling";
 
