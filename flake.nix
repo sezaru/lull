@@ -9,8 +9,6 @@
     flake-utils.url = "github:numtide/flake-utils";
 
     devkit.url = "github:sezaru/nix-devkit";
-
-    dev-ai-plugins.follows = "devkit/dev-ai-plugins";
   };
 
   nixConfig = {

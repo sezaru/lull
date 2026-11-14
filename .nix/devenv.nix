@@ -1,15 +1,9 @@
-{
-  inputs,
-  pkgs,
-  ...
-}: {
+{inputs, ...}: {
   imports = [
     inputs.devkit.devenvModule
   ];
 
-  packages = [
-    inputs.dev-ai-plugins.packages.${pkgs.stdenv.system}.mobile-dev-deps
-  ];
+  modules.dev-ai-plugins.deps = ["mobile-dev"];
 
   modules.claude = {
     enable = true;
